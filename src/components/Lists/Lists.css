@@ -1,0 +1,105 @@
+.lists{
+    text-decoration: underline;
+    font-size: 35px;
+    color: white;
+    margin: 20px; 
+}
+
+.list-titles{
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    margin: 20px;
+}
+.list-titles:hover{
+color: rgb(202, 199, 199);
+}
+.list-title{
+    text-decoration: underline;
+    font-size: 35px;
+    color: white;
+    margin: 20px;
+}
+
+.form{
+  margin-bottom: 32px;
+  display: inline;
+}
+
+.list-form{
+  margin-top: 30px;
+  color: white;
+  padding: 20px;
+}
+
+.create-list-button{
+  padding: 14px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.input{
+  padding: 18px 32px 14px 16px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 4px 0 0 4px;
+  border: 3px solid #5d0cff;
+  outline: none;
+  width: 400px;
+  background: transparent;
+  color: #fff;
+
+}
+
+.input::placeholder {
+  text-align: center;
+  font-size: 22px;
+  /* color: #e2e2e2; */
+}
+
+.add-button {
+  padding: 17px;
+  font-size: 24px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.delete-list-button{
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  margin-top: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-list-button:hover{
+  background: linear-gradient(
+    90deg,
+    rgb(63, 147, 158) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+
+.list-label{
+  font-size: 25px;
+}

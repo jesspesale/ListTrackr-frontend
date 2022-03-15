@@ -1,0 +1,66 @@
+.list-item{
+  display: flex;
+  width: 585px;
+  margin-left: 30px;
+  font-size: 20px;
+  padding: 7px;
+  color: white;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 15px;
+  border-radius: 5px;
+  width: 95%;
+}
+
+.item-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+} 
+
+.delete-icon{
+  display: flex;
+  align-items: center;
+  font-size: 33px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.edit-icon{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+/* .item-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.item-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+} */
