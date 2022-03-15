@@ -8,8 +8,7 @@
 .list-titles{
     text-decoration: none;
     font-size: 28px;
-    color: white;
-    margin: 20px;
+    color: rgb(145, 84, 214);
 }
 .list-titles:hover{
 color: rgb(202, 199, 199);
