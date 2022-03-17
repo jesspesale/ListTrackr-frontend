@@ -5,10 +5,10 @@ export default function Home() {
     <>
       <div className="list-title">Welcome to List Trackr</div>
       <p className='home-paragraph'>
-        Use this app to create lists to help you keep track of your
+        Use this app to create lists that help you keep track of your
         everyday life. From grocery shopping lists, to things you need
         to get done after work, to even packing lists for your next 
-        vacation.
+        vacation, use List Trackr!
         
       </p>
     </>

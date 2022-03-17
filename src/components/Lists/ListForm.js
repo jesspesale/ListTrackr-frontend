@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { useDispatch } from "react-redux"
 import { createList } from "../../redux/listActions"
 import { useNavigate } from "react-router-dom"
-import { useParams } from "react-router-dom"
 import "./Lists.css"
 
 
