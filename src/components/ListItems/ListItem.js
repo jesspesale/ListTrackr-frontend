@@ -13,6 +13,11 @@ export default function ListItem({item}) {
   const [edit, setEdit] = useState(false)
   const [newItem, setNewItem] = useState(item.description);
     
+  const capitalize = (str) => {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  console.log(capitalize("yes"))
 
     const handleDelete = (clickedItem) => {
         const listId = clickedItem.list_id
@@ -48,6 +53,7 @@ export default function ListItem({item}) {
 
   return (
     <div className="list-item">
+      {/* <div className="item-row">{capitilize(item.description)}</div> */}
       <div className="item-row">{item.description}</div>
       <BsTrash className="delete-icon" onClick={() => handleDelete(item)} />
       <FiEdit className="edit-icon" onClick={(e) => handleEdit(e)}/>

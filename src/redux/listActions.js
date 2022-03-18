@@ -2,7 +2,6 @@ import { FETCH_LISTS, DELETE_LIST, EDIT_LIST_ITEM, ADD_LIST, ADD_ITEM, DELETE_LI
 
 export function fetchLists(){
     return (dispatch) => {
-        // fetch("http://localhost:3000/api/v1/lists")
         fetch("https://listtrackr-backend.herokuapp.com/api/v1/lists")
           .then(res => res.json())
           .then(lists => dispatch({ type: FETCH_LISTS, payload: lists }))
@@ -11,7 +10,6 @@ export function fetchLists(){
 
 export function createList(list){
     return (dispatch) => {
-      // fetch("http://localhost:3000/api/v1/lists/", {
         fetch("https://listtrackr-backend.herokuapp.com/api/v1/lists", {
           method: "POST",
           headers: {
@@ -27,7 +25,6 @@ export function createList(list){
 
 export function createListItem(item, listId) {
   return (dispatch) => {
-    // fetch(`http://localhost:3000/api/v1/lists/${listId}/list_items`, {
     fetch(`https://listtrackr-backend.herokuapp.com/api/v1/lists/${listId}/list_items`, {
       method: "POST",
       headers: {
@@ -44,7 +41,6 @@ export function createListItem(item, listId) {
 
 export const deleteListItem = (listId, itemId) => {
   return (dispatch) => {
-      // fetch(`http://localhost:3000/api/v1/lists/${listId}/list_items/${itemId}`,{
       fetch(`https://listtrackr-backend.herokuapp.com/api/v1/lists/${listId}/list_items/${itemId}`, {
           method: "DELETE",
         })
@@ -55,7 +51,6 @@ export const deleteListItem = (listId, itemId) => {
 
 export const deleteList = (listId) => {
   return (dispatch) => {
-    // fetch(`http://localhost:3000/api/v1/lists/${listId}`, {
     fetch(`https://listtrackr-backend.herokuapp.com/api/v1/lists/${listId}`, {
       method: "DELETE",
     })
@@ -66,7 +61,6 @@ export const deleteList = (listId) => {
 
 export const editListItem = (listId, item) => {
   return (dispatch) => {
-    // fetch(`http://localhost:3000/api/v1/lists/${listId}/list_items/${item.id}`, {
     fetch(`https://listtrackr-backend.herokuapp.com/api/v1/lists/${listId}/list_items/${item.id}`, {
       headers: {
         "Content-Type": "application/json",

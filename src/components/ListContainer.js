@@ -9,7 +9,9 @@ export default function ListContainer() {
     const dispatch = useDispatch()
     const { id } = useParams()
     const lists = useSelector((state) => state.lists)
-    const list = lists.find((list) => list.id === id)
+    // const list = lists.find((list) => list.id == id)
+    const list = lists.find((list) => String(list.id) === id)
+    // const list = lists.find((list) => console.log(list.id, id))
     const navigate = useNavigate()
   
 
