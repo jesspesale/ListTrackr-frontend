@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { createListItem } from "../../redux/listActions"
 
 export default function ListItemForm({list}) {
+  
   const [item, setItem] = useState("")
   const dispatch = useDispatch()
 
@@ -18,7 +19,6 @@ export default function ListItemForm({list}) {
     <div>
       <br></br>
       <form className="form" onSubmit={handleSubmit}>
-        {/* <label>Add to your list: </label> */}
         <input
           className="input"
           value={item}

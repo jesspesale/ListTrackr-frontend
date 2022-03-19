@@ -25,10 +25,6 @@ export default function ListItem({item}) {
         navigate(`/lists/${listId}`)
     }
 
-    const handleEdit = () => {
-      setEdit(true)
-    }
-
     const handleSubmit = (event) => {
       event.preventDefault()
       item.description = newItem
@@ -41,11 +37,12 @@ export default function ListItem({item}) {
       return (
         <form onSubmit={(event) => handleSubmit(event)}>
           <input
-            className="input"
+            className="update-input"
             value={newItem}
             onChange={(e) => setNewItem(e.target.value)}
             placeholder="Edit your list"
           />
+          <button className="update-button" >Update</button>
         </form>
       );
     }
@@ -53,10 +50,9 @@ export default function ListItem({item}) {
 
   return (
     <div className="list-item">
-      {/* <div className="item-row">{capitilize(item.description)}</div> */}
       <div className="item-row">{item.description}</div>
       <BsTrash className="delete-icon" onClick={() => handleDelete(item)} />
-      <FiEdit className="edit-icon" onClick={(e) => handleEdit(e)}/>
+      <FiEdit className="edit-icon" onClick={() => setEdit(true)} />
     </div>
-  )
+  );
 }
