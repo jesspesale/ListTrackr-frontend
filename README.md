@@ -30,9 +30,9 @@ Or you can just check out the deployed site: https://listtrackr.netlify.app/
 
 There are 3 buttons in the navbar to guide you through the application:
 
-1. **Home** - just tells you a little about the app and what to use it for
-2. **Lists** - Displays all of the lists in the database by their titles. Each title is a link to that list's page
-4.**Create a new list** - Displays a small form to type in your new list title. After submitting it brings you back to the "lists" page to see all created list titles as links.
+1. **Home** - just tells you a little about the app and what to use it for  
+2. **Lists** - Displays all of the lists in the database by their titles. Each title is a link to that list's page  
+3.**Create a new list** - Displays a small form to type in your new list title. After submitting it brings you back to the "lists" page to see all created list titles as links.
 
 When you click on the title of an individual list after clicking the "Lists" button it brings you to that list show page where it displays the title and all the list items for that specific list. There is a form to add other list items, and a delete button at the bottom to delete the entire list. 
 
