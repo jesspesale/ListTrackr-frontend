@@ -32,6 +32,10 @@ export default function ListItem({item}) {
       setEdit(false)
     }
 
+    const completeItem = (item) => {
+      console.log(item)
+    }
+
 
     if(edit){
       return (
@@ -50,7 +54,7 @@ export default function ListItem({item}) {
 
   return (
     <div className="list-item">
-      <div className="item-row">{item.description}</div>
+      <div className="item-row" onClick={() => completeItem(item)}>{item.description}</div>
       <BsTrash className="delete-icon" onClick={() => handleDelete(item)} />
       <FiEdit className="edit-icon" onClick={() => setEdit(true)} />
     </div>

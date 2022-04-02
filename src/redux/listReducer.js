@@ -44,6 +44,8 @@ export default function listReducer(state = {lists: []}, action){
           case EDIT_LIST_ITEM:
             return { ...state }
           
+            // case COMPLETE_LIST_ITEM
+          
       default:
         return state
     }
