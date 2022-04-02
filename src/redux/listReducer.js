@@ -1,4 +1,12 @@
-import { FETCH_LISTS, ADD_LIST, EDIT_LIST_ITEM, DELETE_LIST, ADD_ITEM, DELETE_LIST_ITEM } from "./constants"
+import {
+  FETCH_LISTS,
+  ADD_LIST,
+  EDIT_LIST_ITEM,
+  DELETE_LIST,
+  ADD_ITEM,
+  DELETE_LIST_ITEM,
+  COMPLETE_LIST_ITEM,
+} from "./constants";
 
 export default function listReducer(state = {lists: []}, action){
     switch (action.type) {

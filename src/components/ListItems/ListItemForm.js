@@ -7,9 +7,13 @@ export default function ListItemForm({list}) {
   const [item, setItem] = useState("")
   const dispatch = useDispatch()
 
+    const capitalize = (str) => {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
   function handleSubmit(e) {
     e.preventDefault()
-    let newItem = {description: item, completed: false, list_id: list.id}
+    let newItem = {description: capitalize(item), completed: false, list_id: list.id}
     dispatch(createListItem(newItem, list.id))
     setItem("")
   }
