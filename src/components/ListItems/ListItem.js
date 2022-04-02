@@ -54,7 +54,11 @@ export default function ListItem({item}) {
 
   return (
     <div className="list-item">
-      <div className="item-row" onClick={() => completeItem(item)}>{item.description}</div>
+      <div 
+      className={item.completed ? "item-row complete" : "item-row" }
+      onClick={() => completeItem(item)}>{
+      item.description}
+      </div>
       <BsTrash className="delete-icon" onClick={() => handleDelete(item)} />
       <FiEdit className="edit-icon" onClick={() => setEdit(true)} />
     </div>
