@@ -50,6 +50,7 @@ export default function listReducer(state = {lists: []}, action){
               lists: newLists2
             }
           case EDIT_LIST_ITEM:
+            // console.log(action.payload)
             return { ...state }
           
           case COMPLETE_LIST_ITEM:
