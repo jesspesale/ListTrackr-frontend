@@ -70,6 +70,7 @@ export const editListItem = (listId, item) => {
       body: JSON.stringify(item)
     })
       .then((resp) => resp.json())
+      .then(lists => console.log(lists))
       .then((lists) => dispatch({ type: EDIT_LIST_ITEM, payload: lists }))
   }
 }

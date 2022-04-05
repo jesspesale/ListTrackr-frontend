@@ -12,7 +12,7 @@ export default function ListItem({item}) {
 
   const [edit, setEdit] = useState(false)
   const [newItem, setNewItem] = useState(item.description)
-  const [completed, setCompleted] = useState(false)
+  const [completed, setCompleted] = useState(item.completed)
 
     const handleDelete = (clickedItem) => {
         const listId = clickedItem.list_id
