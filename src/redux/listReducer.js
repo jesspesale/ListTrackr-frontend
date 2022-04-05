@@ -51,12 +51,23 @@ export default function listReducer(state = {lists: []}, action){
             }
           case EDIT_LIST_ITEM:
             console.log(action.payload)
-            console.log(state)
-            return { ...state }
+            // console.log(state)
+            // return { ...state }
           
-          case COMPLETE_LIST_ITEM:
-            return {
+          // case COMPLETE_LIST_ITEM:
+          //   return {
 
+          //   }
+            let newLists3 = state.lists.map(list => {
+              if(list.id === action.payload.id){
+                 return action.payload
+              }else {
+                   return list
+              }
+            })  
+            return {
+              ...state,
+              lists: newLists3
             }
           
       default:
